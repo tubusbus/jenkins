@@ -1,0 +1,21 @@
+---
+
+- scm:
+   name: git-ui-tests
+   scm:
+   - git:
+      url: git@github.com:tubusbus/otus_panturov_homework.git
+      credentials-id: jenkins
+      branches:
+      - FETCH_HEAD
+      refspec: ${BRANCH}
+
+- scm:
+   name: git-runner
+   scm:
+   - git:
+      url: git@github.com:tubusbus/jenkins.git
+      credentials-id: jenkins
+      branches:
+      - FETCH_HEAD
+      refspec: ${BRANCH}
