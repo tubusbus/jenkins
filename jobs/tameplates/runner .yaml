@@ -12,7 +12,7 @@
    parameters:
       - string:
          name: BRANCH
-         default: master
+         default: homework_1
          description: Branch for tempest barbican UI tests
       - string:
          name: BASE_URL
@@ -35,9 +35,9 @@
          quote-value: false
          visible-items: 5
          type: multi-select
-         default-value: api,ui,mobile
-         value: api,ui,mobile
+         default-value: api,ui
+         value: api,ui
    pipeline-scm:
       scm:
          - git-runner
-      script-path: jobs/scripts/run-all-ui-tests.groovy
+      script-path: jobs/scripts/run-all-tests.groovy
