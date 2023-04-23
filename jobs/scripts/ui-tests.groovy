@@ -4,12 +4,8 @@ timeout(60) {
             checkout scm
         }
         stage('Run tests') {
-            def jobs = [:]
-
-            def runnerJobs = "$TEST_TYPE".split(",")
-
             jobs['ui-tests'] = {
-                node('maven-slave') {
+                node('maven') {
                     stage('Ui tests on chrome') {
                         if ('ui' in runnerJobs) {
                             catchError(buldResult: 'SUCCESS', stageResult: 'UNSTABLE') {
