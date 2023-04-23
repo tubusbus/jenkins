@@ -3,8 +3,7 @@
 - view:
    name: 'QA'
    view-type: list
-   decription: |
-      <h3 style="color:#999696;">Runner tests</h3>
+   decription: 'Runner tests'
    filter-executors: true
    filter-queue: true
    job_name:

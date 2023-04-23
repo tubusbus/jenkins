@@ -1,6 +1,6 @@
 - job-template:
    name: 'runner-tests'
-   decription: '<h3 style="color:#999696;">Runner tests</h3>'
+   decription: 'Runner tests'
    project-type: pipeline
    concurrent: true
    logrotate:
@@ -16,7 +16,7 @@
          description: Branch for tempest barbican UI tests
       - string:
          name: BASE_URL
-         default: http;//otus.ru
+         default: http://otus.ru
          description: Base url
       - string:
          name: BROWSER
