@@ -9,7 +9,7 @@ timeout(60) {
             def runnerJobs = "$TEST_TYPE".split(",")
 
             jobs['ui-tests'] = {
-                node('maven-slave') {
+                node('maven') {
                     stage('Ui tests on chrome') {
                         if ('ui' in runnerJobs) {
                             catchError(buldResult: 'SUCCESS', stageResult: 'UNSTABLE') {
