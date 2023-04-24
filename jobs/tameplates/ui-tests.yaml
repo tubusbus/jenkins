@@ -12,7 +12,7 @@
    parameters:
       - string:
          name: BRANCH
-         default: homework_1
+         default: homework_4
          description: Branch for tempest barbican UI tests
       - string:
          name: BASE_URL
@@ -28,7 +28,7 @@
          decription: Browser version
       - string:
          name: GRID_URL
-         default: http://127.0.0.1:4445
+         default: http://127.0.0.1:4444
    pipeline-scm:
       scm:
          - git-ui-tests
